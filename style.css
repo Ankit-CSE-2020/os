@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+body{
+ font-family: 'Red Hat Display', sans-serif;
+ background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-color:  hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+min-height: 100vh;
+
+text-align: center;
+ 
+}
+
+
+
+.container{
+   
+    background-color: #fff;
+    width: 23rem;
+     border-radius: 1rem;
+    
+     
+}
+
+.container img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    max-width: 23rem;
+}
+
+h1{
+    color: hsl(223, 47%, 23%);
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.about{
+
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+    
+    
+}
+.annual{
+    color:  hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.plan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    background-color:   hwb(228 96% 0%);
+    margin: 0rem 2rem;
+    padding: 1rem 1rem;
+}
+
+.icon-music{
+    width: 80%;
+}
+
+.main-annual{
+    margin: 0rem 0.5rem;
+}
+
+.price{
+    color:hsl(224, 23%, 55%) ;
+}
+
+.main-change{
+    margin-left:3.7rem  ;
+}
+
+.change:hover{
+    text-decoration: none;
+    color:hsl(245, 57%, 56%) ;
+}
+
+button{
+    width: 83%;
+    padding: 1rem;
+    margin: 1rem ;
+    font-weight: 700;
+    background-color: blue;
+    color: #fff;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 5px  hsla(245, 57%, 56%, 0.315);
+}
+
+button:hover{
+    cursor: pointer;
+      background-color:hsl(245, 57%, 56%) ;
+}
+
+#cancel{
+    
+     color:  hsl(224, 23%, 55%);
+      text-decoration: none;
+    }
+   
+.order{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}    
+
+#cancel:hover{
+    cursor: pointer;
+    color:  hsl(224, 44%, 22%);
+    
+}
+
+
+@media only screen and (max-width:400px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
